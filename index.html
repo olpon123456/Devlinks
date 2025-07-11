@@ -1,131 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Top 10 Video Editing Software</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    .software-list {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 1em;
-    }
-
-    .software-item {
-      margin-bottom: 2em;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 1em;
-    }
-
-    .software-item h3 {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
     }
-
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom, #f0f2f5 70%, rgba(255,255,255,0.6));
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1f2937;
+      color: #fff;
+      padding: 1.5em 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2em auto;
+      border-radius: 10px;
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+      transition: backdrop-filter 0.5s ease;
+    }
+    section {
+      padding: 2em;
+    }
+    .intro {
+      background-color: #ffffff;
+    }
+    .software-section {
+      background-color: #fefefe;
+    }
+    .contact-section {
+      background-color: #f8f9fa;
+    }
+    .about-section {
+      background-color: #e9ecef;
+    }
+    .software-item {
+      display: flex;
+      align-items: flex-start;
+      background: #fafafa;
+      margin-bottom: 1.5em;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .software-item:hover {
+      transform: scale(1.02);
+    }
+    .software-item img {
+      width: 60px;
+      height: 60px;
+      margin-right: 1em;
+      object-fit: contain;
+    }
+    .software-item h3 {
+      margin-bottom: 0.3em;
+      font-size: 1.2em;
+    }
     .software-item a {
-      color: #007bff;
+      color: #1d4ed8;
       text-decoration: none;
     }
-
     .software-item a:hover {
       text-decoration: underline;
     }
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2em;
+    }
+    label {
+      margin-top: 1em;
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 0.5em;
+      margin-top: 0.3em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 1em;
+      padding: 0.7em;
+      background-color: #1f2937;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #374151;
+    }
+    .section-title {
+      margin-bottom: 1em;
+      font-size: 1.6em;
+      font-weight: bold;
+      border-bottom: 2px solid #1f2937;
+      padding-bottom: 0.5em;
+    }
+    footer {
+      background-color: #1f2937;
+      color: #fff;
+      text-align: center;
+      padding: 1.5em 0;
+      margin-top: 3em;
+    }
   </style>
-
 </head>
 <body>
   <header>
     <h1>Top 10 Video Editing Software</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy.html">Privacy Policy</a>
-
+      <a href="#">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">Author</a>
     </nav>
-  </header>
+  </header>  <main>
+    <section class="intro">
+      <p>Explore the best video editing tools for creators of all levels. Whether you're cutting together clips for YouTube or working on a high-budget production, these tools offer professional-grade features, intuitive interfaces, and cross-platform support. Our curated list covers both desktop giants and agile mobile editors so you can find what suits your workflow best.</p>
+    </section><section class="software-section">
+  <h2 class="section-title">Top Software Tools</h2>
 
-
-
-  <main class="software-list">
-    <p>Explore the best video editing tools for creators, from beginner-friendly mobile apps to professional studio software:</p>
-
-
-<div style="margin-top: 1em;">
-  <a href="https://www.profitableratecpm.com/esmdza7e?key=908de23451732a274ed617725a0cd41c"
-     rel="noopener noreferrer"
-     style="color: #007bff; font-weight: bold;">
-    Click here to get started in your coding!
-  </a>
-</div>
-
-
-    <div class="software-item">
+  <div class="software-item">
+    <img src="img/premiere.png" alt="Premiere Pro">
+    <div>
       <h3><a href="https://www.adobe.com/products/premiere.html" target="_blank">Adobe Premiere Pro</a></h3>
-      <p>Industry-leading editor used by professionals for film, TV, and web content. Offers timeline-based editing, color grading, and more.</p>
+      <p>A robust video editing platform used by Hollywood studios and YouTubers alike. It supports multi-camera editing, advanced transitions, built-in AI audio cleanup, and full integration with Adobe Creative Cloud. Premiere is ideal for those who want control, precision, and industry-grade output.</p>
     </div>
+  </div>
 
-    <div class="software-item">
+  <div class="software-item">
+    <img src="img/finalcut.png" alt="Final Cut Pro">
+    <div>
       <h3><a href="https://www.apple.com/final-cut-pro/" target="_blank">Final Cut Pro X</a></h3>
-      <p>Exclusive to macOS, this powerful editor provides blazing-fast performance and intuitive controls for pro filmmakers.</p>
+      <p>Exclusive to Apple users, Final Cut Pro X offers a magnetic timeline, real-time rendering, and optimized performance for Mac hardware. It supports high-resolution formats and cinematic plugins, making it a top choice for fast-paced content creation and film editing workflows.</p>
     </div>
+  </div>
 
-    <div class="software-item">
+  <div class="software-item">
+    <img src="img/resolve.png" alt="DaVinci Resolve">
+    <div>
       <h3><a href="https://www.blackmagicdesign.com/products/davinciresolve/" target="_blank">DaVinci Resolve</a></h3>
-      <p>Combines editing, color correction, audio post, and visual effects. Ideal for colorists and editors working at any level.</p>
+      <p>Combining color grading, visual effects, motion graphics, and professional audio post-production, DaVinci Resolve is a complete filmmaking studio in one tool. Widely used by indie filmmakers and colorists, it offers a free version that competes with the best paid editors.</p>
     </div>
+  </div>
 
-    <div class="software-item">
-      <h3><a href="https://www.capcut.com/" target="_blank">CapCut</a></h3>
-      <p>A fast-growing mobile editor with trendy effects, text, and music. Great for TikTok and social content creators.</p>
-    </div>
+</section>
 
-    <div class="software-item">
-      <h3><a href="https://filmora.wondershare.com/" target="_blank">Filmora</a></h3>
-      <p>Simple, drag-and-drop video editing with built-in templates and music. Suitable for beginners and hobbyists.</p>
-    </div>
+<section id="contact" class="contact-section">
+  <h2 class="section-title">Contact</h2>
+  <form action="#" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
 
-    <div class="software-item">
-      <h3><a href="https://www.apple.com/imovie/" target="_blank">iMovie</a></h3>
-      <p>Comes free on macOS and iOS. Perfect for quick edits, trailers, and home videos.</p>
-    </div>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
 
-    <div class="software-item">
-      <h3><a href="https://fxhome.com/hitfilm" target="_blank">HitFilm Express</a></h3>
-      <p>Free editor with VFX capabilities and motion tracking. Great for action and sci-fi video projects.</p>
-    </div>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
 
-    <div class="software-item">
-      <h3><a href="https://kdenlive.org/en/" target="_blank">Kdenlive</a></h3>
-      <p>Open-source and powerful, Kdenlive runs on Linux, Windows, and Mac. Ideal for those who want full control without a subscription.</p>
-    </div>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
-    <div class="software-item">
-      <h3><a href="https://inshot.com/" target="_blank">InShot</a></h3>
-      <p>Popular mobile app for quick edits, filters, transitions, and music. Widely used by influencers and marketers.</p>
-    </div>
+<section id="about" class="about-section">
+  <h2 class="section-title">About the Author</h2>
+  <p>Hi, I'm Ol Pon — a passionate web enthusiast and the mind behind DevsLinks.store. I created this platform to help creators, editors, and entrepreneurs find high-quality tools for their content production. With a background in design and digital marketing, I aim to simplify your search for reliable software. I believe in clean interfaces, fast-loading pages, and content that truly helps people. Thanks for visiting, and I hope you find value here!</p>
+</section>
 
-    <div class="software-item">
-      <h3><a href="https://www.blender.org/features/video-editing/" target="_blank">Blender</a></h3>
-      <p>Primarily a 3D modeling tool, but its built-in video editor is capable and great for timeline-based edits with effects.</p>
-
-
-    </div>
-  </main>
-
-  <footer>
-    <p>© Devlinks.store. Curated with care for creators worldwide.</p>
+  </main>  <footer>
+    <p>© 2025 DevsLinks.store – Curated with care for creators worldwide.</p>
   </footer>
-
-
-<script>
-  window.addEventListener('load', function () {
-    const link = document.querySelector('a[href*="908de23451732a274ed617725a0cd41c"]');
-    if (link) {
-      link.click();
-    }
-  });
-</script>
-
-
 </body>
 </html>
