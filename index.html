@@ -126,11 +126,46 @@
       margin-top: 3em;
     }
 
+    /* CTA Section Styling */
+    .cta-section {
+      background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+      color: #fff;
+      text-align: center;
+      padding: 2.5em 1.5em;
+      border-radius: 10px;
+      margin: 2em auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .cta-section:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    .cta-section h2 {
+      font-size: 1.8em;
+      margin-bottom: 0.5em;
+    }
+    .cta-section p {
+      font-size: 1.1em;
+      margin-bottom: 1.2em;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #fff;
+      color: #1d4ed8;
+      font-weight: bold;
+      padding: 0.8em 1.8em;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #e0e7ff;
+      color: #1e3a8a;
+    }
   </style>
 </head>
 <body>
-
-https://impracticalshoulder.com/OIRUe6
 
   <header>
     <h1>Top 10 Video Editing Software</h1>
@@ -139,61 +174,74 @@ https://impracticalshoulder.com/OIRUe6
       <a href="#contact">Contact</a>
       <a href="#about">Author</a>
     </nav>
-  </header>  <main>
+  </header>  
+
+  <main>
     <section class="intro">
       <p>Explore the best video editing tools for creators of all levels. Whether you're cutting together clips for YouTube or working on a high-budget production, these tools offer professional-grade features, intuitive interfaces, and cross-platform support. Our curated list covers both desktop giants and agile mobile editors so you can find what suits your workflow best.</p>
-    </section><section class="software-section">
-  <h2 class="section-title">Top Software Tools</h2>
+    </section>
 
-  <div class="software-item">
-    <img src="img/premiere.png" alt="Premiere Pro">
-    <div>
-      <h3><a href="https://www.adobe.com/products/premiere.html" target="_blank">Adobe Premiere Pro</a></h3>
-      <p>A robust video editing platform used by Hollywood studios and YouTubers alike. It supports multi-camera editing, advanced transitions, built-in AI audio cleanup, and full integration with Adobe Creative Cloud. Premiere is ideal for those who want control, precision, and industry-grade output.</p>
-    </div>
-  </div>
+    <!-- ✅ Call-To-Action Section -->
+    <section class="cta-section">
+      <h2>Boost Your Editing Power!</h2>
+      <p>Ready to level up your workflow? Check out our special toolkit and resources for creators — all in one place.</p>
+      <a href="https://impracticalshoulder.com/OIRUe6" target="_blank" class="cta-button">Explore Now</a>
+    </section>
 
-  <div class="software-item">
-    <img src="img/finalcut.png" alt="Final Cut Pro">
-    <div>
-      <h3><a href="https://www.apple.com/final-cut-pro/" target="_blank">Final Cut Pro X</a></h3>
-      <p>Exclusive to Apple users, Final Cut Pro X offers a magnetic timeline, real-time rendering, and optimized performance for Mac hardware. It supports high-resolution formats and cinematic plugins, making it a top choice for fast-paced content creation and film editing workflows.</p>
-    </div>
-  </div>
+    <section class="software-section">
+      <h2 class="section-title">Top Software Tools</h2>
 
-  <div class="software-item">
-    <img src="img/resolve.png" alt="DaVinci Resolve">
-    <div>
-      <h3><a href="https://www.blackmagicdesign.com/products/davinciresolve/" target="_blank">DaVinci Resolve</a></h3>
-      <p>Combining color grading, visual effects, motion graphics, and professional audio post-production, DaVinci Resolve is a complete filmmaking studio in one tool. Widely used by indie filmmakers and colorists, it offers a free version that competes with the best paid editors.</p>
-    </div>
-  </div>
+      <div class="software-item">
+        <img src="img/premiere.png" alt="Premiere Pro">
+        <div>
+          <h3><a href="https://www.adobe.com/products/premiere.html" target="_blank">Adobe Premiere Pro</a></h3>
+          <p>A robust video editing platform used by Hollywood studios and YouTubers alike. It supports multi-camera editing, advanced transitions, built-in AI audio cleanup, and full integration with Adobe Creative Cloud. Premiere is ideal for those who want control, precision, and industry-grade output.</p>
+        </div>
+      </div>
 
-</section>
+      <div class="software-item">
+        <img src="img/finalcut.png" alt="Final Cut Pro">
+        <div>
+          <h3><a href="https://www.apple.com/final-cut-pro/" target="_blank">Final Cut Pro X</a></h3>
+          <p>Exclusive to Apple users, Final Cut Pro X offers a magnetic timeline, real-time rendering, and optimized performance for Mac hardware. It supports high-resolution formats and cinematic plugins, making it a top choice for fast-paced content creation and film editing workflows.</p>
+        </div>
+      </div>
 
-<section id="contact" class="contact-section">
-  <h2 class="section-title">Contact</h2>
-  <form action="#" method="post">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
+      <div class="software-item">
+        <img src="img/resolve.png" alt="DaVinci Resolve">
+        <div>
+          <h3><a href="https://www.blackmagicdesign.com/products/davinciresolve/" target="_blank">DaVinci Resolve</a></h3>
+          <p>Combining color grading, visual effects, motion graphics, and professional audio post-production, DaVinci Resolve is a complete filmmaking studio in one tool. Widely used by indie filmmakers and colorists, it offers a free version that competes with the best paid editors.</p>
+        </div>
+      </div>
+    </section>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Contact</h2>
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-<section id="about" class="about-section">
-  <h2 class="section-title">About the Author</h2>
-  <p>Hi, I'm Ol Pon — a passionate web enthusiast and the mind behind DevsLinks.store. I created this platform to help creators, editors, and entrepreneurs find high-quality tools for their content production. With a background in design and digital marketing, I aim to simplify your search for reliable software. I believe in clean interfaces, fast-loading pages, and content that truly helps people. Thanks for visiting, and I hope you find value here!</p>
-</section>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
-  </main>  <footer>
+    <section id="about" class="about-section">
+      <h2 class="section-title">About the Author</h2>
+      <p>Hi, I'm Ol Pon — a passionate web enthusiast and the mind behind DevsLinks.store. I created this platform to help creators, editors, and entrepreneurs find high-quality tools for their content production. With a background in design and digital marketing, I aim to simplify your search for reliable software. I believe in clean interfaces, fast-loading pages, and content that truly helps people. Thanks for visiting, and I hope you find value here!</p>
+    </section>
+
+  </main>  
+
+  <footer>
     <p>© 2025 DevsLinks.store – Curated with care for creators worldwide.</p>
   </footer>
+
 </body>
 </html>
